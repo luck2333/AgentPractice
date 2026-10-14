@@ -4,6 +4,7 @@ from langchain_community.llms.tongyi import Tongyi
 # 示例的模板
 example_template = PromptTemplate.from_template("单词：{word}, 反义词：{antonym}")
 
+# print(example_template)
 # 示例的动态数据注入 要求是list内部套字典
 examples_data = [
     {"word": "大", "antonym": "小"},

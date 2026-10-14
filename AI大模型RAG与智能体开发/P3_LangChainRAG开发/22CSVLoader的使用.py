@@ -5,7 +5,7 @@ loader = CSVLoader(
     file_path="./data/stu.csv",
     csv_args={
         "delimiter": ",",       # 指定分隔符
-        "quotechar": '"',       # 指定带有分隔符文本的引号包围是单引号还是双引号
+        "quotechar": '"',       # 当字段内容中包含特殊字符（例如分隔符、换行符）时，用quotechar字符把这个字段包起来
         # 如果数据原本有表头，就不要下面的代码，如果没有可以使用
         "fieldnames": ['name', 'age', 'gender', '爱好']
     },

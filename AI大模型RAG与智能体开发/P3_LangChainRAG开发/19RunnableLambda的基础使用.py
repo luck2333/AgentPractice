@@ -2,7 +2,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
 from langchain_community.chat_models.tongyi import ChatTongyi
 
-model = ChatTongyi(model="qwen3-max")
+model = ChatTongyi(model="qwen3.7-max")
 str_parser = StrOutputParser()
 
 first_prompt = PromptTemplate.from_template(

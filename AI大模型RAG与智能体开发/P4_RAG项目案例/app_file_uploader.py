@@ -41,7 +41,3 @@ if uploader_file is not None:
         time.sleep(1)
         result = st.session_state["service"].upload_by_str(text, file_name)
         st.write(result)
-
-
-
-

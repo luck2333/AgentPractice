@@ -48,7 +48,7 @@ def format_func(docs: list[Document]):
 
     return formatted_str
 
-# chain
+# chain   非常巧妙的设计，从invoke处得到的参数同时传给了retriever和RunnablePassthrough
 chain = (
     {"input": RunnablePassthrough(), "context": retriever | format_func} | prompt | print_prompt | model | StrOutputParser()
 )
